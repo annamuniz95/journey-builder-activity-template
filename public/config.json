@@ -1,15 +1,15 @@
 {
     "workflowApiVersion": "1.1",
     "metaData": {
-        "icon": "images/icon.png",
+        "icon": "images/clown.jpg",
         "iconSmall": "images/iconSmall.png",
         "category": "message"
     },
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "Template",
-          "description": "A Template for a custom Journey Builder activity",
+            "name": "BM",
+          "description": "Custom Activity de Testes - BM",
           "step1Label": "Configure Activity"
         }
     },
@@ -49,7 +49,7 @@
       }
     },
     "wizardSteps": [
-        { "label": "Configure Activity", "key": "step1" }
+        { "label": "BM", "key": "BM_step1" }
     ],
     "userInterfaces": {
         "configModal": {
