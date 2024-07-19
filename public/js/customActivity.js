@@ -100,11 +100,13 @@ define([
         connection.trigger('updateActivity', payload);
     }
 
-    function clique(){
-        console.log("teste pela função clique!");
-    }
+    document.getElementById('button_submited').addEventListener('click', submitForm);
 
-    console.log("valor do button: " + document.getElementById('button_submited').value);
+    function submitForm(){
+        var valor = document.getElementById('button_submited').value;
+        console.log("dentro da função adicionada submitForm, valor = " + valor);
+
+    }
 
 
 });
