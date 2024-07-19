@@ -100,11 +100,17 @@ define([
         connection.trigger('updateActivity', payload);
     }
 
-    document.getElementById('button_submited').addEventListener('click', submitForm);
+    document.getElementById('button_submited').addEventListener('click', getFields);
 
-    function submitForm(){
+    function getFields(){
         var valor = document.getElementById('button_submited').value;
         console.log("dentro da função adicionada submitForm, valor = " + valor);
+
+        var nome = document.getElementById('nome_input').value;
+        var idade = document.getElementById('idade_input').value;
+        var morada = document.getElementById('morada_input').value;
+
+        console.log("Idade: " + idade + " | nome: " + nome + " | morada: " + morada);
 
     }
 
