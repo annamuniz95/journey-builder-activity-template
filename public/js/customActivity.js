@@ -113,8 +113,8 @@ define([
         console.log("Idade: " + idade + " | nome: " + nome + " | morada: " + morada);
 
         var data = {
-            "client_id": "7a5q386lxj7ln2l6syokmg4z",
-            "client_secret": "B5SbvHoKsEZix1hkHiki0aI1",
+            "client_id": "",
+            "client_secret": "",
             "grant_type": "client_credentials"
             }
 
