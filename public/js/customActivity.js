@@ -104,5 +104,7 @@ define([
         console.log("teste pela função clique!");
     }
 
+    console.log("valor do button: " + document.getElementById('button_submited').value);
+
 
 });
