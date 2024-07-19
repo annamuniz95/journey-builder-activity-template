@@ -100,5 +100,9 @@ define([
         connection.trigger('updateActivity', payload);
     }
 
+    function clique(){
+        console.log("teste pela função clique!");
+    }
+
 
 });
