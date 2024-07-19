@@ -112,6 +112,27 @@ define([
 
         console.log("Idade: " + idade + " | nome: " + nome + " | morada: " + morada);
 
+        var data = {
+            client_id: "7a5q386lxj7ln2l6syokmg4z",
+            client_secret: "B5SbvHoKsEZix1hkHiki0aI1",
+            grant_type: "client_credentials"
+            }
+
+        fetch('https://mcd4bm-71n1sb-b50r3-shp8cp94.auth.marketingcloudapis.com/v2/token', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+
     }
 
 
