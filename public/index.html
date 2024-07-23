@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="//code.jquery.com/git/jquery-git.min.js"></script>
     <script type="text/javascript" src="js/require.js"></script>
+    <script type="text/javascript" src="js/postmonger.js"></script>
     <script type="text/javascript">
         (function () {
             var config = {
@@ -28,17 +29,13 @@
 <body>
     <div id="step1" class="step">
         <div class="slds-grid">
-                <h3>Introduzir dados em uma DE</h3>
+                <h3>Enviar PUSH teste</h3>
                 <main class="slds-col slds-size--1-of-3 slds-p-horizontal--small">
-                    <label for="nome">Nome: </label>
-                    <input type="text" name="nome" id="nome_input">
+                    <label for="cliente_ID">Cliente ID: </label>
+                    <input type="text" name="cliente_ID" id="cliente_ID_input" placeholder="Insira aqui o ID do cliente">
                     <br>
-                    <label for="idade_input">Idade: </label>
-                    <input type="number" name="idade" id="idade_input">
-                    <br>
-                    <label for="morada_input">Morada: </label>
-                    <input type="text" name="morada" id="morada_input">
-                    <br>
+                    <label for="mensagem_input">Mensagem: </label>
+                    <textarea name="mensagem" id="mensagem_input" rows="10" cols="100" placeholder="Insira aqui a mensagem">
                     <button type="button" id="button_submited" value="Send">Enviar</button>
                 </main>
         </div>
